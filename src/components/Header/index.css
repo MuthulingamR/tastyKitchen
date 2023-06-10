@@ -1,0 +1,130 @@
+.nav-header {
+  display: flex;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.nva-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1110px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.website-logo {
+  width: 110px;
+}
+
+.image-logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-heading {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f7931e;
+  margin-left: 15px;
+}
+
+.popup-content {
+  position: absolute;
+  margin: 0px;
+  background-color: #ffffff;
+  height: 30vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.popup-container {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-nav-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.head-para {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #334155;
+}
+
+.active-head-para {
+  color: #f7931e;
+}
+
+.logout-btn {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 16px;
+  width: 73px;
+  height: 32px;
+  background: #f7931e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.mobile-nav-link {
+  text-decoration: none;
+}
+
+.empty-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-bar-large-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.large-nav-bar-link-container {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-logo-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar-large-container {
+    display: none;
+  }
+}

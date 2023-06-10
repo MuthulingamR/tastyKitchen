@@ -1,0 +1,9 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-inner-container {
+  padding-right: 30px;
+  padding-left: 30px;
+}

@@ -1,0 +1,166 @@
+.home-container {
+  background-color: #ffffff;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 250px;
+}
+
+.home-inner-container {
+  padding: 20px 40px 20px 40px;
+}
+
+.home-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #183b56;
+  margin: 0px;
+}
+
+.home-description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #64748b;
+}
+
+.home-sort-by-para {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  color: #475569;
+}
+
+.select-option {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+  padding-right: 10px;
+}
+
+.home-loader {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.restaurants-ul-container {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-line {
+  display: none;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn {
+  padding: 2px;
+  outline: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 1px solid #334155;
+}
+
+.pagination-icon {
+  font-size: 18px;
+  color: #334155;
+}
+
+.active-page-number {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #334155;
+}
+
+@media screen and (min-width: 768px) {
+  .home-sort-by-para {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-description {
+    font-size: 18px;
+  }
+
+  .home-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .restaurants-ul-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .home-line {
+    display: flex;
+    width: 100%;
+    border: 1px solid #cbd2d9;
+  }
+
+  .pagination-icon {
+    font-size: 23px;
+  }
+
+  .active-page-number {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .pagination-btn {
+    padding: 5px;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 320px;
+  }
+
+  .carousel-container {
+    padding: 45px;
+  }
+}

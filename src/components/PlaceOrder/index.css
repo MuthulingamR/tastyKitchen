@@ -1,0 +1,39 @@
+.place-order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+.success-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.para-success {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+.home-btn-success {
+  background-color: #f7931e;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'DM Sans';
+  border-radius: 8px;
+  padding: 9px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,168 @@
+.login-mobile-container {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-image-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.egg-image {
+  width: 387px;
+  height: 387px;
+  padding-left: 56px;
+  top: -38px;
+  align-self: flex-end;
+}
+
+.login-heading {
+  color: #0f172a;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  left: 24px;
+  top: 296px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.input-field {
+  height: 40px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  padding: 16px 32px;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.login-btn {
+  background: #f7931e;
+  border-radius: 8px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.error-msg {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ef4444;
+}
+
+@media screen and (min-width: 768px) {
+  .login-mobile-container {
+    display: none;
+  }
+
+  .login-desktop-view {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+
+  .login-desktop-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .login-desktop-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 456px;
+    height: 523px;
+    background: #fefeff;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    border-radius: 8px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  label {
+    align-self: flex-start;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .desktop-login-heading {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'DM Sans';
+  }
+
+  .website-heading {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #f7931e;
+  }
+
+  .website-image {
+    width: 50%;
+  }
+
+  .error-msg {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-desktop-view {
+    display: none;
+  }
+}

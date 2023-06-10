@@ -1,0 +1,45 @@
+.cart-summary-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-total {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e4c59;
+}
+
+.summary-rupee-container {
+  display: flex;
+  align-items: center;
+}
+
+.summary-rupee-icon {
+  font-size: 16px;
+  color: #3e4c59;
+  margin-right: 5px;
+}
+
+.summary-btn {
+  color: #ffffff;
+  background: #f7931e;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .summary-total {
+    font-size: 28px;
+  }
+}
