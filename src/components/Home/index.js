@@ -154,65 +154,68 @@ class Home extends Component {
     } = this.state
 
     return (
-      <div className="home-container">
-        <div className="home-response-container">
-          {carouselLoading
-            ? this.renderOfferLoaderView()
-            : this.renderSliderView()}
-          <div className="home-inner-container">
-            <h1 className="home-heading">Popular Restaurants</h1>
-            <div className="home-sort-by-para">
-              <p className="home-description">
-                Select Your favourite restaurant special dish and make your day
-                happy...
-              </p>
-              <div className="filter-container">
-                <BsFilterLeft size={26} color="#475569" />
-                <p className="sort-by">Sort by</p>
-                <select
-                  className="select-option"
-                  onChange={this.onChangeOptionValue}
-                  value={activeOptionValue}
+      <>
+        <div className="home-container">
+          <div className="home-response-container">
+            {carouselLoading
+              ? this.renderOfferLoaderView()
+              : this.renderSliderView()}
+            <div className="home-inner-container">
+              <h1 className="home-heading">Popular Restaurants</h1>
+              <div className="home-sort-by-para">
+                <p className="home-description">
+                  Select Your favourite restaurant special dish and make your
+                  day happy...
+                </p>
+                <div className="filter-container">
+                  <BsFilterLeft size={26} color="#475569" />
+                  <p className="sort-by">Sort by</p>
+                  <select
+                    className="select-option"
+                    onChange={this.onChangeOptionValue}
+                    value={activeOptionValue}
+                  >
+                    {sortByOptions.map(each => (
+                      <option key={each.id} value={each.value}>
+                        {each.displayText}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <hr className="home-line" />
+              <ul className="restaurants-ul-container">
+                {restaurantsList.map(each => (
+                  <RestaurantCard key={each.id} restaurantDetails={each} />
+                ))}
+              </ul>
+              <div className="pagination-container">
+                <button
+                  data-testid="pagination-left-button"
+                  type="button"
+                  className="pagination-btn"
+                  onClick={this.onClickLeftPagination}
                 >
-                  {sortByOptions.map(each => (
-                    <option key={each.id} value={each.value}>
-                      {each.displayText}
-                    </option>
-                  ))}
-                </select>
+                  <AiOutlineLeft className="pagination-icon" />
+                </button>
+                <p className="active-page-number">
+                  <span data-testid="active-page-number">{activePage}</span> of
+                  4
+                </p>
+                <button
+                  data-testid="pagination-right-button"
+                  type="button"
+                  className="pagination-btn"
+                  onClick={this.onClickRightPagination}
+                >
+                  <AiOutlineRight className="pagination-icon" />
+                </button>
               </div>
             </div>
-            <hr className="home-line" />
-            <ul className="restaurants-ul-container">
-              {restaurantsList.map(each => (
-                <RestaurantCard key={each.id} restaurantDetails={each} />
-              ))}
-            </ul>
-            <div className="pagination-container">
-              <button
-                data-testid="pagination-left-button"
-                type="button"
-                className="pagination-btn"
-                onClick={this.onClickLeftPagination}
-              >
-                <AiOutlineLeft className="pagination-icon" />
-              </button>
-              <p className="active-page-number">
-                <span data-testid="active-page-number">{activePage}</span> of 4
-              </p>
-              <button
-                data-testid="pagination-right-button"
-                type="button"
-                className="pagination-btn"
-                onClick={this.onClickRightPagination}
-              >
-                <AiOutlineRight className="pagination-icon" />
-              </button>
-            </div>
           </div>
-          <Footer />
         </div>
-      </div>
+        <Footer />
+      </>
     )
   }
 

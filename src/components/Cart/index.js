@@ -18,6 +18,11 @@ class Cart extends Component {
     this.setState({placeOrder: true})
   }
 
+  addToLocalStorage = () => {
+    const {cartList} = this.state
+    localStorage.setItem('cartData', JSON.stringify(cartList))
+  }
+
   incrementCartItemQuantity = id => {
     this.setState(prevState => ({
       cartList: prevState.cartList.map(eachCartItem => {
@@ -53,7 +58,7 @@ class Cart extends Component {
     const updatedCartList = cartList.filter(
       eachCartItem => eachCartItem.id !== id,
     )
-    this.setState({cartList: updatedCartList})
+    this.setState({cartList: updatedCartList}, this.addToLocalStorage)
   }
 
   renderCartList = () => {
@@ -91,8 +96,8 @@ class Cart extends Component {
           <div className="cart-inner-container">
             {placeOrder ? <PlaceOrder /> : this.renderCartList()}
           </div>
-          <Footer />
         </div>
+        <Footer />
       </CartContext.Provider>
     )
   }
