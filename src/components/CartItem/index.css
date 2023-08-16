@@ -7,7 +7,7 @@
 }
 
 .item-image {
-  width: 25%;
+  width: 35%;
   height: 100%;
   border-radius: 6px;
   margin-right: 13px;
@@ -68,19 +68,50 @@
   margin-right: 10px;
 }
 
+.image-heading-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.large-cart-item-container {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .cart-food-item-li {
-    width: 40%;
-    height: 220px;
+  .large-cart-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 90%;
   }
 
+  .sm-item-container {
+    display: none;
+  }
+
+  .cart-food-item-li {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 220px;
+  }
   .item-image {
-    width: 35%;
-    height: 100%;
+    display: none;
+  }
+
+  .item-image-lg {
+    width: 136px;
+    height: 100px;
+    margin-right: 5px;
+    border-radius: 12px;
+    flex-shrink: 0;
   }
 
   .item-name {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
 

@@ -4,7 +4,7 @@ import CartListView from '../CartListView'
 import EmptyCartView from '../EmptyCart'
 import CartContext from '../../Context/CartContext'
 import PlaceOrder from '../PlaceOrder'
-import OrderSummary from '../OrderSummary'
+
 import Footer from '../Footer'
 import './index.css'
 
@@ -68,7 +68,6 @@ class Cart extends Component {
         {cartList.length > 0 ? (
           <>
             <CartListView />
-            <OrderSummary />
           </>
         ) : (
           <EmptyCartView />

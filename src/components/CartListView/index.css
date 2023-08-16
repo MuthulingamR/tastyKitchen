@@ -1,4 +1,35 @@
 .food-cart-ul-list {
   list-style-type: none;
+  width: 80%;
   padding: 0px;
+}
+
+.ul-title-container {
+  display: none;
+}
+
+hr {
+  border: 1px dashed #cbd2d9;
+}
+
+@media screen and (min-width: 768px) {
+  .food-cart-ul-list {
+    border: 1px solid var(--main-hover-light, rgba(11, 105, 255, 0.1));
+    background: #f9fbfe;
+    padding: 20px;
+  }
+  .ul-title-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    color: var(--light-blue-gray-600, #475569);
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+  }
 }
